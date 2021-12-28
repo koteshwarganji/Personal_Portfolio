@@ -1,0 +1,106 @@
+/*Home Section Styles*/
+#home{
+    background-image: url("https://cdn.pixabay.com/photo/2017/09/05/10/20/business-2717066__340.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100vh;
+    width:100%;
+}
+#home h3{
+    font-style: italic;
+}
+#home h3{
+    animation-name: animation1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation1 {
+    0%  {color: red;}
+    50%  {color: yellow;}
+    70%  {color: blue;}
+    100% {color: green;}
+}
+
+#home [type="button"]{
+    background-color: red;    
+    color:white;
+    font-weight: bolder;
+}
+
+#home [type="button"]:hover{
+    background-color: white;
+    color:red;
+}
+/*About Section Styles*/
+#about{
+    height:100%;
+    width:100%;
+    color:black;
+    /* background-color:#F4DB78; */
+    background-color: #E3E4E7;
+}
+
+#about a{
+    color:black;
+    border:2px solid #171717;
+}
+
+#about a:hover{
+    background-color:#171717;
+    color:white;
+    border:2px solid #171717;
+}
+
+#about p{
+    text-align: justify;
+    /* font-weight: bolder; */
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    /* font-family: cursive; */
+    background-color: #DADAE2;
+    /* color: white; */
+}
+
+#about p span{
+    /* background-color: #FCC729; */
+    font-style: italic;
+    /* color:yellow */
+    /* font-family: cursive; */
+    /* font-weight: bold; */
+}
+
+#about img{
+    border:2px solid black;
+}
+
+#about input[type="range"]{
+    -webkit-appearance: none;
+    background-color:#171717;
+}
+
+#about  input[type="range"]+span{
+    background-color: #DADAE2;
+    font-weight: bold;
+}
+
+/*Service Section Styles*/
+#service{
+    font-style: oblique;
+    height: 100%;
+    width: 100%;
+    background-color: #CDD6D5;
+}
+
+#service img{
+    height:200px;
+    width: 200px;
+}
+
+/*Contact Section Styles*/
+#contact{
+    height: 100%;
+    width:100%;
+    background-color: #DADAE2;
+}

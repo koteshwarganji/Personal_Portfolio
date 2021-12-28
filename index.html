@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta Tag to provide additional information about document-->
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Personal Portfolio">
+    <meta name="description" content="Personal Portfolio Website Design">
+    <meta name="author" content="Ganji Koteshwar">
+    <meta name="keywords" content="Personal Portfolio">
+    <!--To Add Multimedia Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--To Link Bootstrap file-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--link to css file-->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script/script.js"></script>
+    <title>My Personal Portfolio Website</title>
+</head>
+<body onload="displaySkills()">
+    <header>
+        <!-- navbar dark in color : Toggleable navbar-->
+       <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" style="font-weight: bold;">
+        <!-- replace bg-dark class with bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, and .bg-light 
+        to obtain navbar of diiferent colours -->
+    
+        <!-- Add a white text color to all links in the navbar with the .navbar-dark class, 
+        or use the .navbar-light class to add a black text color. -->
+                <!-- Brand -->
+            <a class="navbar-brand" href="#home">PORTFOLIO</a>
+              
+                <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">SERVICES</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li> 
+                </ul>
+                <!--Add Social Media Icons to right hand side of Navbar-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-facebook" href="https://www.facebook.com/ganji.koteshwar" target="_blank"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-instagram" href="https://www.instagram.com/koteshwar17" target="_blank"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-linkedin" href="https://www.linkedin.com/in/ganji-koteshwar-2797121a7" target="_blank"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-whatsapp"  href="https://wa.me/6300297881" target="_blank"></a>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+    </header>
+    <!--Home Section-->
+    <section id="home" class="py-5">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-md-6 py-5">
+                    <h3>Hello I'm</h3>
+                    <h3>Ganji Koteshwar</h3>
+                    <h3 style="text-decoration: underline;">Amdocs Clarify CRM</h3>
+                    <h3 style="text-decoration: underline;">FULL STACK DEVELOPER</h3>
+                    <button type="button" class="btn">My Work</button>
+                    <button type="button" class="btn">Hire Me</button>
+                </div>
+                <div class="col-md-6 py-5">
+                    <a class="fa fa-facebook fa-2x btn btn-primary" href="https://www.facebook.com/ganji.koteshwar" target="_blank"></a>
+                    <a class="fa fa-instagram fa-2x btn btn-danger" href="https://www.instagram.com/koteshwar17" target="_blank"></a>
+                    <a class="fa fa-linkedin fa-2x btn btn-primary" href="https://www.linkedin.com/in/ganji-koteshwar-2797121a7" target="_blank"></a>
+                    <a class="fa fa-whatsapp fa-2x btn btn-success"  href="https://wa.me/6300297881" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About Section-->
+    <section id="about" class="py-5">
+        <div class="container" class="py-5">
+            <div class="row" class="py-5">
+                <div class="col-md-4 py-5">
+                    <img src="assets/koteshwar.jpg" class="img-fluid img-thumbnail">
+                    <a class="btn btn-block" target="_blank" href="assets/KoteshwarGanji.pdf" download><span class="fa fa-download"> Download C.V</span></a>
+                    <a class="btn btn-block"  href="#contact">Contact Me</a>
+                </div>
+                <div class="col-md-8 py-5">
+                    <h1>About Me</h1>
+                    <p>
+                        My name is Ganji Koteshwar.I am from Hyderabad. I am graduated from Kakatiya University(Information Technology).
+                        I have been working in Infosys for 2 years in System Engineer role  in Telecom based project<span>(Amdocs Clarify CRM Application)</span>.
+                        Currently working with Infosys as System Engineer specialized in telco domain
+                        consulting. Working for Liberty Global Telecom client as an IT Analyst for enhancing
+                        and supporting it's CRM & derby stack applications. <span>Experience in CRM Application development and it's L2,L3 Support Operations.</span> 
+                        Analyzing the incidents and providing workaround and code fixes required in CRM
+                        application.Worked on permanent bug fixes by doing PBI analysis.
+                        Implementation on different client requests via CRQ apart from Incidents/Problems
+                        reported.Monitor the queues on Remedy and ensure the tickets are updated, SLA's  are always met.
+                        Reporting and client co-ordination to improvise the processes as well as speedy
+                        delivery of critical releases.Workaround scripts using PLSQL.Code fixes in Clarify Application and in <span>ORACLE DB Packages, PROCEDURES, TRIGGERS</span> etc.
+                        Coordinates with different applications <span>[Provisioning Systems, BILLING, OFF,PEAL,PEGA]</span> to resolve end customer issues.
+                        Apart from support Work in Clarify, <span>experience in implementing forms in Angular.
+                        Experience in developing Web Applications using MEAN.</span>
+                    </p>
+                    <div class="form-group">
+                        <div>
+                            <input type="range"  value="60" min="0" max="100" class="form-control progress" name="Amdocs Clarify CRM" onchange="displaySkills()"><span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="range" value="60" min="0" max="100" class="form-control progress" name="HTML" onchange="displaySkills()"><span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="range" value="50" min="0" max="100" class="form-control progress" name="CSS" onchange="displaySkills()"><span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="range" value="50" min="0" max="100" class="form-control progress" name="JAVASCRIPT" onchange="displaySkills()"><span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="range" value="60" min="0" max="100" class="form-control progress" name="BOOTSTRAP" onchange="displaySkills()"><span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="range" value="70" min="0" max="100" class="form-control progress" name="MONGODB" onchange="displaySkills()"><span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="range" value="50" min="0" max="100" class="form-control progress" name="NODE-EXPRESS" onchange="displaySkills()"><span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="range" value="50" min="0" max="100" class="form-control progress" name="ANGULAR" onchange="displaySkills()"><span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="range" value="70" min="0" max="100" class="form-control progress" name="SQL" onchange="displaySkills()"><span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="range" value="70" min="0" max="100" class="form-control progress" name="PLSQL" onchange="displaySkills()"><span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Service Section-->
+    <section id="service" class="py-5">
+        <h1 class="text-center">Services</h1>
+        <div class="container" class="py-5">
+            <div class="row" class="py-5">
+                <div class="col-md-4 offset-md-2 py-5">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="assets/web_design_symbol.jpg" alt="img un-available" class="img-fluid img-thumbnail">                               
+                        </div>
+                        <div class="card-footer text-justify">
+                            Developing responsive Web Pages using HTML5,CSS3,Javascript,Bootstrap,MongoDB,Typescript,Node-Express,REST and Angular.
+                            MEAN (M-MongoDB,E-Express,A-Angular,N-Node).
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-5">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h3>Amdocs Clarify CRM</h3>
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="assets/Amdocs_Clarify_CRM.png" alt="img un-available" class="img-fluid img-thumbnail">
+                        </div>
+                        <div class="card-footer text-justify">
+                            Working for Liberty Global Telecom client as an IT Analyst for enhancing
+                            and supporting it's CRM  Applications.Experience in CRM Application development 
+                            and it's Support Operations.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact Section-->
+    <section id="contact" class="py-5">
+        <h1 class="text-center">Contact Me</h1>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="fa fa-phone fa-3x"></span>
+                    <h4>Phone</h4>
+                    <p>
+                       +91 6300297881,
+                        +91 9959053017
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa fa-envelope fa-3x"></span>
+                    <h4>Email</h4>
+                    <p>
+                        koteshwarganji@gmail.com,
+                        bujji143koti@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa fa-home fa-3x"></span>
+                    <h4>Address</h4>
+                    <p>House No 2/2-73 Yadadri-Bhongiri Telangana</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <form method="post" enctype="text/plain" action="mailto:koteshwarganji@gmail.com">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name" name="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" name="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="comments" required>Message</textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-info"> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
